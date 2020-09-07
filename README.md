@@ -50,7 +50,15 @@ apt-get install busybox-syslogd
 apt-get remove --purge rsyslog
 ```
 
-Edit /etc/fstab and add the ,ro flags to all block devices and add tmpfs
+Edit /etc/fstab and add the ,ro flags to all block devices
+```
+proc                  /proc     proc    defaults             0     0
+PARTUUID=fb0d460e-01  /boot     vfat    defaults,ro          0     2
+PARTUUID=fb0d460e-02  /         ext4    defaults,noatime,ro  0     1
+```
+
+
+Edit /etc/fstab and add tmpfs
 ```
 tmpfs        /tmp            tmpfs   nosuid,nodev         0       0
 tmpfs        /var/log        tmpfs   nosuid,nodev         0       0
