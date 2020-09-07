@@ -1,6 +1,26 @@
 # Read only filesystem for Raspberry PI OS - Buster
 
 
+# Initial setup
+
+* write image file
+* create a file named "ssh" on /boot partition
+* for wifi, creata a file "wpa_supplicant.conf" on /boot
+
+```
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+country=<Insert 2 letter ISO 3166-1 country code here>
+
+network={
+ ssid="<Name of your wireless LAN>"
+ psk="<Password for your wireless LAN>"
+}
+```
+
+
+# Do over ssh
+
 Run as root
 ```
 apt-get remove --purge triggerhappy logrotate dphys-swapfile
