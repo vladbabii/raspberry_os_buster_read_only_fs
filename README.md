@@ -72,3 +72,8 @@ Create /etc/bash.bash_logout
 mount -o remount,ro /
 mount -o remount,ro /boot
 ```
+
+Reboot and enjoy!
+
+Source:
+* https://medium.com/swlh/make-your-raspberry-pi-file-system-read-only-raspbian-buster-c558694de79
