@@ -18,8 +18,14 @@ network={
 }
 ```
 
+# First boot
+Run raspi-config and configure everything as you want to
+* memory split
+* localisation
+* time zone
+* ...
 
-# Do over ssh
+# Second boot
 
 Run as root
 ```
