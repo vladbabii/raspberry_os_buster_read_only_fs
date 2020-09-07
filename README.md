@@ -27,6 +27,12 @@ Run raspi-config and configure everything as you want to
 
 # Second boot
 
+Update packages
+```
+apt-get update
+apt-get upgrade
+```
+
 Run as root
 ```
 apt-get remove --purge triggerhappy logrotate dphys-swapfile
