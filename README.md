@@ -1,5 +1,6 @@
 # Read only filesystem for Raspberry PI OS - Buster
 
+This works on Buster releases of raspberry pi - tested on a PI 4 with a fresh install of the lite version
 
 # Initial setup
 
