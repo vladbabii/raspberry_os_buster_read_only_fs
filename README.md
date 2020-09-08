@@ -25,6 +25,7 @@ Run raspi-config and configure everything as you want to
 * localisation
 * time zone
 * ...
+then reboot
 
 # Second boot
 
@@ -40,7 +41,7 @@ apt-get remove --purge triggerhappy logrotate dphys-swapfile
 apt-get autoremove --purge
 ```
 
-Edit /boot/cmdline.txt
+Edit /boot/cmdline.txt and add at the end of the file
 ```
 fastboot noswap ro
 ```
@@ -51,7 +52,7 @@ apt-get install busybox-syslogd
 apt-get remove --purge rsyslog
 ```
 
-Edit /etc/fstab and add the ,ro flags to all block devices
+Edit /etc/fstab and add the ",ro" flags to all block devices that start with PARTUUID=...
 ```
 proc                  /proc     proc    defaults             0     0
 PARTUUID=fb0d460e-01  /boot     vfat    defaults,ro          0     2
