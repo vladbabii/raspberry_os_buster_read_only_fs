@@ -98,7 +98,7 @@ ExecStop=/lib/systemd/systemd-random-seed save
 TimeoutSec=30s
 ```
 
-Edit /etc/bash.bashrc and add the lines
+Edit /etc/bash.bashrc and add the lines at the end of the file
 ```
 set_bash_prompt() {
     fs_mode=$(mount | sed -n -e "s/^\/dev\/.* on \/ .*(\(r[w|o]\).*/\1/p")
@@ -123,6 +123,13 @@ Reboot and enjoy!
 Connect via ssh and type "rw" to make the filesystem writable again and install anything you want.
 
 Type "ro" to make the filesystem readonly again - it can take some time untill all writes are finished so be a little patient.
+
+The prompt will change based on rw or ro filesystem to let you know the state, here is how it will look like when switching from ro to rw and back again
+```
+pi@raspberrypi(ro):~$ rw
+pi@raspberrypi(rw):~$ ro
+pi@raspberrypi(ro):~$ 
+```
 
 
 
