@@ -6,7 +6,7 @@ This works on Buster releases of raspberry pi - tested on a PI 4 with a fresh in
 
 * write image file
 * create a file named "ssh" on /boot partition
-* for wifi, creata a file "wpa_supplicant.conf" on /boot
+* for wifi, creata a file "wpa_supplicant.conf" on /boot and fill in country code ( US, DE, etc) and your wifi name (ssid) and password
 
 ```
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
