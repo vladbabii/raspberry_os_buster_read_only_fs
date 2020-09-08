@@ -126,6 +126,7 @@ Type "ro" to make the filesystem readonly again - it can take some time untill a
 
 
 # Sources
+* https://media.ccc.de/v/30C3_-_5294_-_en_-_saal_1_-_201312291400_-_the_exploration_and_exploitation_of_an_sd_memory_card_-_bunnie_-_xobs#t=2
 * https://learn.adafruit.com/read-only-raspberry-pi
 * https://medium.com/swlh/make-your-raspberry-pi-file-system-read-only-raspbian-buster-c558694de79
 
