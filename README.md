@@ -116,5 +116,16 @@ mount -o remount,ro /boot
 
 Reboot and enjoy!
 
-Source:
+
+# How to use
+
+Connect via ssh and type "rw" to make the filesystem writable again and install anything you want.
+
+Type "ro" to make the filesystem readonly again - it can take some time untill all writes are finished so be a little patient.
+
+
+
+# Sources
+* https://learn.adafruit.com/read-only-raspberry-pi
 * https://medium.com/swlh/make-your-raspberry-pi-file-system-read-only-raspbian-buster-c558694de79
+
