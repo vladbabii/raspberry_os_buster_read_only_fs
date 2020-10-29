@@ -30,7 +30,7 @@ DESC=nginx
 [Service]
 Type=forking
 PIDFile=/run/nginx.pid
-ExecStartPre=- /bin/mkdir -p /var/log/nginx
+ExecStartPre=-/bin/mkdir -p /var/log/nginx
 ExecStartPre=/usr/sbin/nginx -t -q -g 'daemon on; master_process on;'
 ExecStart=/usr/sbin/nginx -g 'daemon on; master_process on;'
 ExecReload=/usr/sbin/nginx -g 'daemon on; master_process on;' -s reload
