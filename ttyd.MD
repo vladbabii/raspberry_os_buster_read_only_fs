@@ -4,7 +4,7 @@ Warning!
 This asumes you're using the "pi" user, change the lines below if you're using something else
 
 ## Install
-Find the last .arm file from https://github.com/tsl0922/ttyd/releases then createa a folder "ttyd" in your home folder and download that file 
+Find the last .arm file from https://github.com/tsl0922/ttyd/releases then createa a folder "ttyd" in your home folder and download that file or  run the commands below
 
 ```
 cd ~
