@@ -26,21 +26,26 @@ Open browser and go to http://raspberry_pi_ip:8080/
 
 ## Run modes
 
-run without authentication of any kind
+### run without authentication of any kind
 ```
 ..../ttyd -p 8080 bash
 ```
 
-run with normal ssh-like auth
+### run with normal ssh-like auth
 ```
 ..../ttyd --credential "username:password" -p 8080 login
 ```
 
-run with web authentication
+### run with web authentication
 ```
 ..../ttyd -p 8080 login
 ```
 
+### Only allow kiauh (no shell)
+```
+..../ttyd -p 8080 /home/pi/kiauh/kiauh.sh
+```
+and in systemd file change user to "pi" and group to "pi"
 
 ## Nginx integration
 see https://github.com/tsl0922/ttyd/wiki/Nginx-reverse-proxy
